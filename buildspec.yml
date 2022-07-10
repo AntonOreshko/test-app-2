@@ -12,5 +12,5 @@ phases:
 
 artifacts:
   files:
-    - dist/**/*
+    - ./**
     - aws-windows-deployment-manifest.json
