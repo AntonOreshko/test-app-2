@@ -7,7 +7,7 @@ phases:
   
   build:
     commands:
-      - dotnet build -c Release ./TestApp2.csproj
+      - dotnet build -c Release ./TestApp2/TestApp2.csproj
       - dotnet publish -o dist
 
 artifacts:
