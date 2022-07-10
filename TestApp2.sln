@@ -2,9 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp2", "TestApp2\TestApp2.csproj", "{797A7D09-7C46-4F8D-A736-C67EC416A40C}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{0FCA413C-1C09-4EF0-A388-2F1AA20632C3}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "aws", "aws", "{0FCA413C-1C09-4EF0-A388-2F1AA20632C3}"
 	ProjectSection(SolutionItems) = preProject
 		buildspec.yml = buildspec.yml
+		aws-windows-deployment-manifest.json = aws-windows-deployment-manifest.json
 	EndProjectSection
 EndProject
 Global
