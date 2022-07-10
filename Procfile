@@ -1,1 +1,1 @@
-web: dotnet ./TestApp2/TestApp2.dll
+web: dotnet ./TestApp2.dll
