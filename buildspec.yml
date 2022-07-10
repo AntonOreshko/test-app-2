@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - /usr/local/bin/dotnet-install.sh --channel LTS
+  
+  build:
+    commands:
+      - dotnet build -c Release ./TestApp2.csproj
+      - dotnet publish -o dist
+
+artifacts:
+  files:
+    - dist/**/*
+    - aws-windows-deployment-manifest.json
