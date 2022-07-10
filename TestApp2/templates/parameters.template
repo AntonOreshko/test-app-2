@@ -1,0 +1,29 @@
+﻿{
+    "Parameters" : {
+        "AppName" : {
+            "Type" : "String",
+            "Default" : "Customer-Core-Api",
+            "Description": "Enter app name"
+        },
+        "Environment" : {
+            "Type" : "String",
+            "Default" : "Development",
+            "AllowedValues" : ["Development", "QA", "Production"],
+            "Description": "Enter environment"
+        }
+    },
+    "Resources": {
+        "BasicParameter": {
+            "Type": "AWS::SSM::Parameter",
+            "Properties": {
+                "Name": { "Fn::Join" : [ "/", [ { "Ref": "AppName" }, { "Ref": "Environment" } ] ] },
+                "Type": "String",
+                "Value": "Auto value",
+                "Description": "SSM Parameter for running date command.",
+                "Tags": {
+                  "Environment": "Development"
+                }
+            }
+        }
+    }
+}
