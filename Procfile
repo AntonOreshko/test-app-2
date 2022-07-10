@@ -1,1 +1,0 @@
-web: dotnet ./TestApp2.dll

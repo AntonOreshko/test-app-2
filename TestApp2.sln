@@ -6,7 +6,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "aws", "aws", "{0FCA413C-1C0
 	ProjectSection(SolutionItems) = preProject
 		buildspec.yml = buildspec.yml
 		aws-windows-deployment-manifest.json = aws-windows-deployment-manifest.json
-		Procfile = Procfile
 	EndProjectSection
 EndProject
 Global
