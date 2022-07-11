@@ -27,7 +27,7 @@ builder.Services.AddDefaultAWSOptions(builder.Configuration.GetAWSOptions());
 
 var app = builder.Build();
 
-app.MapHealthChecks("/health");
+app.MapHealthChecks("/health"); 
 
 app.UseSwagger();
 app.UseSwaggerUI();
