@@ -3,7 +3,7 @@ using Amazon.Runtime;
 
 var builder = WebApplication.CreateBuilder(args);
 
-//builder.Configuration.AddSystemsManager("/test-app-2/Development/", reloadAfter: TimeSpan.FromMinutes(5));
+builder.Configuration.AddSystemsManager("/test-app-2/Development/", reloadAfter: TimeSpan.FromMinutes(5));
 
 // Add services to the container.
 
@@ -14,7 +14,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddHealthChecks();
 
 // way 1
-//builder.Services.AddDefaultAWSOptions(builder.Configuration.GetAWSOptions());
+//builder.Services.AddDefaultAWSOptions();
 // way2
 // var awsOptions = builder.Configuration.GetAWSOptions();
 // builder.Services.AddDefaultAWSOptions(awsOptions);
