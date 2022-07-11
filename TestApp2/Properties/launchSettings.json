@@ -16,10 +16,7 @@
       "launchUrl": "swagger",
       "applicationUrl": "http://localhost:5157",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development",
-        "AWS_ACCESS_KEY_ID": "AKIAWWPEFEVF2HOAQGN7",
-        "AWS_SECRET_ACCESS_KEY": "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",
-        "AWS_DEFAULT_REGION": "eu-central-1"
+        "ASPNETCORE_ENVIRONMENT": "Development"
       }
     }
   }
